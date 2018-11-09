@@ -1,0 +1,24 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Contact Form plugin for Craft CMS 3.x
+ *
+ * Contact Form Settings.twig
+ *
+ * @author    Trendyminds
+ * @copyright Copyright (c) 2018 Trendyminds
+ * @link      https://trendyminds.com/
+ * @package   ContactForm
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+    label: 'To Address',
+    instructions: 'Email address of recipient',
+    id: 'toAddress',
+    name: 'toAddress',
+    value: settings['toAddress']})
+}}

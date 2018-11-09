@@ -1,0 +1,40 @@
+{
+    "name": "trendyminds/contact-form",
+    "description": "Sends an email to Zendesk",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "contact form"
+    ],
+    "support": {
+        "docs": "https://github.com/https://github.com/trendyminds/contact-form/blob/master/README.md",
+        "issues": "https://github.com/https://github.com/trendyminds/contact-form/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Trendyminds",
+            "homepage": "https://trendyminds.com/"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "trendyminds\\contactform\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Contact Form",
+        "handle": "contact-form",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/https://github.com/trendyminds/contact-form/master/CHANGELOG.md",
+        "class": "trendyminds\\contactform\\ContactForm"
+    }
+}
